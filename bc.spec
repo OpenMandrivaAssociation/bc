@@ -15,8 +15,8 @@ Patch1:		bc-1.06-fixes.patch
 Patch2:		bc-1.06-info-dir-entry.patch
 Patch3:		bc-1.06-flex.patch
 BuildRequires:	flex ncurses-devel readline-devel
-Requires(post):  /sbin/install-info grep
-Requires(preun):/sbin/install-info grep
+Requires(post):  info-install grep
+Requires(preun):info-install grep
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
