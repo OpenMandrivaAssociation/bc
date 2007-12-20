@@ -17,6 +17,7 @@ Patch3:		bc-1.06-flex.patch
 BuildRequires:	flex ncurses-devel readline-devel
 Requires(post):  info-install grep
 Requires(preun):info-install grep
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The bc package includes bc and dc.  Bc is an arbitrary precision numeric
