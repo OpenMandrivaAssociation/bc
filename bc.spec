@@ -1,6 +1,6 @@
 %define name	bc
 %define version	1.06
-%define release %mkrel 24
+%define release %mkrel 25
 
 Summary:	GNU's bc (a numeric processing language) and dc (a calculator)
 Name:		%{name}
