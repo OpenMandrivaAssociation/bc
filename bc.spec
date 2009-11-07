@@ -13,6 +13,7 @@ Patch1: bc-1.06-dc_ibase.patch
 Patch2: bc-1.06.95-memleak.patch
 BuildRequires:	flex ncurses-devel readline-devel
 BuildRequires:	texinfo
+BuildRequires:	bison
 Requires(post):  info-install grep
 Requires(preun):info-install grep
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
