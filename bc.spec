@@ -1,7 +1,7 @@
 Summary:	GNU's bc (a numeric processing language) and dc (a calculator)
 Name:		bc
 Version:	1.06.95
-Release:	16
+Release:	16.1
 License:	GPLv2+ 
 URL:		http://www.gnu.org/software/bc/bc.html
 Group:		Sciences/Mathematics
@@ -29,11 +29,10 @@ if you would like to use its text mode calculator.
 
 %prep
 %setup -q
-%patch1 -p1 -b .dc_ibase
-%patch2 -p1 -b .memleak
+%apply_patches
 
 %build
-%configure2_5x \
+%configure \
 		--with-readline
 
 %make
