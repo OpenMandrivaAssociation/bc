@@ -5,7 +5,7 @@ Release:	1
 License:	GPLv2+ 
 URL:		http://www.gnu.org/software/bc/bc.html
 Group:		Sciences/Mathematics
-Source0:	http://alpha.gnu.org/gnu/bc/%{name}-%{version}.tar.bz2
+Source0:	http://alpha.gnu.org/gnu/bc/%{name}-%{version}.tar.gz
 # Fedora patches
 # dc accepts the input which contains wrong symbols of radix in same way like bc (RH bug#151844)
 Patch1:		bc-1.06-dc_ibase.patch
