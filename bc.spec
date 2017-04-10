@@ -9,8 +9,6 @@ Source0:	http://alpha.gnu.org/gnu/bc/%{name}-%{version}.tar.gz
 # Fedora patches
 # dc accepts the input which contains wrong symbols of radix in same way like bc (RH bug#151844)
 Patch1:		bc-1.06-dc_ibase.patch
-# fix small memory leak (gentoo patch)
-Patch2:		bc-1.06.95-memleak.patch
 BuildRequires:	flex
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	readline-devel
