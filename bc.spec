@@ -14,6 +14,7 @@ BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	readline-devel
 BuildRequires:	texinfo
 BuildRequires:	bison
+BuildRequires:	ed
 Requires(post):	grep
 Requires(preun):	grep
 
