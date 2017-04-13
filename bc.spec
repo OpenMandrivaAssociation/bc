@@ -1,21 +1,20 @@
 Summary:	GNU's bc (a numeric processing language) and dc (a calculator)
 Name:		bc
-Version:	1.06.95
-Release:	17
+Version:	1.07.1
+Release:	1
 License:	GPLv2+ 
 URL:		http://www.gnu.org/software/bc/bc.html
 Group:		Sciences/Mathematics
-Source0:	http://alpha.gnu.org/gnu/bc/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnu.org/gnu/bc/%{name}-%{version}.tar.gz
 # Fedora patches
 # dc accepts the input which contains wrong symbols of radix in same way like bc (RH bug#151844)
 Patch1:		bc-1.06-dc_ibase.patch
-# fix small memory leak (gentoo patch)
-Patch2:		bc-1.06.95-memleak.patch
 BuildRequires:	flex
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	readline-devel
 BuildRequires:	texinfo
 BuildRequires:	bison
+BuildRequires:	ed
 Requires(post):	grep
 Requires(preun):	grep
 
