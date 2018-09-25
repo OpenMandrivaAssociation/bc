@@ -1,7 +1,7 @@
 Summary:	GNU's bc (a numeric processing language) and dc (a calculator)
 Name:		bc
 Version:	1.07.1
-Release:	3
+Release:	4
 License:	GPLv2+ 
 URL:		http://www.gnu.org/software/bc/bc.html
 Group:		Sciences/Mathematics
@@ -15,8 +15,6 @@ BuildRequires:	readline-devel
 BuildRequires:	texinfo
 BuildRequires:	bison
 BuildRequires:	ed
-Requires(post):	grep
-Requires(preun):	grep
 
 %description
 The bc package includes bc and dc.  Bc is an arbitrary precision numeric
@@ -27,17 +25,16 @@ Install the bc package if you need its number handling capabilities or
 if you would like to use its text mode calculator.
 
 %prep
-%setup -q
-%apply_patches
+%autosetup -p1
 
 %build
 %configure \
 	--with-readline
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc FAQ AUTHORS NEWS README
