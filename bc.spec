@@ -1,7 +1,7 @@
 Summary:	GNU's bc (a numeric processing language) and dc (a calculator)
 Name:		bc
 Version:	1.07.1
-Release:	6
+Release:	7
 License:	GPLv2+ 
 URL:		http://www.gnu.org/software/bc/bc.html
 Group:		Sciences/Mathematics
@@ -40,7 +40,7 @@ if you would like to use its text mode calculator.
 %doc FAQ AUTHORS NEWS README
 %{_bindir}/bc
 %{_bindir}/dc
-%{_mandir}/man1/bc.1*
-%{_mandir}/man1/dc.1*
-%{_infodir}/bc.info*
-%{_infodir}/dc.info*
+%doc %{_mandir}/man1/bc.1*
+%doc %{_mandir}/man1/dc.1*
+%doc %{_infodir}/bc.info*
+%doc %{_infodir}/dc.info*
