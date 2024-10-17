@@ -3,7 +3,7 @@ Name:		bc
 Version:	1.07.1
 Release:	8
 License:	GPLv2+ 
-URL:		http://www.gnu.org/software/bc/bc.html
+URL:		https://www.gnu.org/software/bc/bc.html
 Group:		Sciences/Mathematics
 Source0:	http://ftp.gnu.org/gnu/bc/%{name}-%{version}.tar.gz
 # Fedora patches
